@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to test a regular expression for the ISO date.</p>
+<p>RegExp : \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3,6}|\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3,6}Z </p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var date = new Date;
+    var patt = new RegExp("\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{3,6}|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3,6}Z");
+    var res = patt.test(date.toISOString());	
+    document.getElementById("demo").innerHTML = "Pass test : "+res;
+}
+</script>
+
+</body>
+</html>

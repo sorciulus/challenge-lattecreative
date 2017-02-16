@@ -1,0 +1,19 @@
+{
+    "name": "cronci/Shapes",
+    "description": "Realizzazione Challenge per LatteCreative",   
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Corrado",
+            "email": "sorciulus@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^5.5 || ^7.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "Shapes\\":"vendor/cronci/Shapes/src/"
+        }
+    }
+}
